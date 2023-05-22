@@ -62,9 +62,11 @@ ul, ol {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--iris-color);
-    margin-right: 76px ;
 }
 .header-logo {
+    margin-right: 76px ;
+}
+.header-logo-span {
     color: var(--navy-blue-color)
 }
 .header-list {
@@ -77,6 +79,7 @@ ul, ol {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--navy-blue-color);
+    padding: 24px 0;
 }
 .header-link:hover,
 .header-link:focus {
@@ -147,6 +150,18 @@ ul, ol {
     padding-top: 120px;
     padding-bottom: 120px;
 }
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(100%);
+    margin: -1px;
+}
 .hang-title-item {
     font-weight: 500;
     font-size: 20px;
@@ -215,7 +230,11 @@ ul, ol {
 .team-list-item {
     background: var(--white-color);
     display: block;
-    
+    border-radius: 0px 0px 4px 4px;
+}
+.team-list-text {
+    padding: 32px 16px;
+
 }
 .team-member {
     font-weight: 500;
@@ -224,8 +243,7 @@ ul, ol {
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--navy-blue-color);
-    margin-top: 32px;
-    margin-bottom: 8px;
+
 }
 .team-member-text {
     font-weight: 400;
@@ -234,8 +252,6 @@ ul, ol {
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--text-color);
-    margin-top: auto;
-    margin-bottom: 32px;
 }
 /* ----------------------- FOOTER --------------------- */
 .footer {
@@ -243,9 +259,11 @@ ul, ol {
     padding-top: 100px;
     padding-bottom: 100px;
 }
-.footer-logo {
+.footer-logo-span {
     color: var(--cloud-color);
-    margin-bottom: auto;
+}
+.footer-logo {
+    margin-bottom: 16px;
 }
 .footer-text {
     max-width: 264px;
@@ -254,7 +272,7 @@ ul, ol {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--cloud-color);
-    margin-top: 16px;
+    margin-top: auto;
 }
 /* ----------------------- PORTFOLIO --------------------- */
 .portfolio {
@@ -287,11 +305,17 @@ ul, ol {
 .portfolio-search-btn:focus {
     background: var(--ocean-color);
     color: var(--white-color);
+    border: 1px solid transparent;
 }
 .projects {
     display: flex;
     flex-wrap: wrap;
     gap: 48px 24px;
+}
+.project-item-text {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
 }
 .project {
     font-weight: 500;
@@ -299,9 +323,7 @@ ul, ol {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--navy-blue-color);
-    margin-top: 32px;
     margin-bottom: 8px;
-    margin-left: 16px;
 }
 .project-text {
     font-weight: 400;
@@ -310,6 +332,4 @@ ul, ol {
     letter-spacing: 0.02em;
     color: var(--text-color);
     margin-top: auto;
-    margin-bottom: 32px;
-    margin-left: 16px;
 }
