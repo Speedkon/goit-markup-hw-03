@@ -234,7 +234,6 @@ ul, ol {
 }
 .team-list-text {
     padding: 32px 16px;
-
 }
 .team-member {
     font-weight: 500;
@@ -243,7 +242,7 @@ ul, ol {
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--navy-blue-color);
-
+    margin-bottom: 8px;
 }
 .team-member-text {
     font-weight: 400;
@@ -252,6 +251,7 @@ ul, ol {
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--text-color);
+    margin-top: auto;
 }
 /* ----------------------- FOOTER --------------------- */
 .footer {
@@ -263,6 +263,7 @@ ul, ol {
     color: var(--cloud-color);
 }
 .footer-logo {
+    display: inline-block;
     margin-bottom: 16px;
 }
 .footer-text {
