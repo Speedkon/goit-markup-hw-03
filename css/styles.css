@@ -40,8 +40,6 @@ ul, ol {
 /* ----------------------- HEADER --------------------- */
 .header {
     background: var(--white-color);
-    padding-top: 24px;
-    padding-bottom: 24px;
     border-bottom: 1px solid var(--cornflower);
 }
 .header-container {
@@ -57,8 +55,6 @@ ul, ol {
     font-weight: 800;
     font-size: 18px;
     line-height: 1.17;
-    display: flex;
-    align-items: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--iris-color);
@@ -80,6 +76,7 @@ ul, ol {
     letter-spacing: 0.02em;
     color: var(--navy-blue-color);
     padding: 24px 0;
+    display: block;
 }
 .header-link:hover,
 .header-link:focus {
@@ -110,12 +107,6 @@ ul, ol {
     padding-top: 188px;
     padding-bottom: 188px;
 }
-.hero-container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-
-}
 .hero-title {
     max-width: 496px;
     font-weight: 700;
@@ -125,6 +116,8 @@ ul, ol {
     letter-spacing: 0.02em;
     color: var(--white-color);
     margin-bottom: 48px;
+    margin-right: auto;
+    margin-left: auto;
 }
 .hero-btn {
     min-width: 169px;
@@ -141,6 +134,8 @@ ul, ol {
     border: none;
     border-radius: 4px;   
     margin-top: auto;
+    margin-right: auto;
+    margin-left: auto;
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -292,8 +287,6 @@ ul, ol {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    display: flex;
-    align-items: center;
     text-align: center;
     letter-spacing: 0.04em;
     color: var(--iris-color);
